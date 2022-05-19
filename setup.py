@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = "HydroXAJ_test",
-    version = "0.0.1",
+    version = "0.0.2",
     keywords = ["hydrologic model", "XinAnJiang"],
     description = "A conceptual hydrological model.",
     long_description = "This is a python implementation for XinAnJiang (XAJ) model, which is one of the most famous conceptual hydrological model, especially in Southern China.",
