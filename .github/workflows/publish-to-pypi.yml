@@ -1,4 +1,4 @@
-name: Publish Python distributionsto PyPI
+name: Publish Python distributions to PyPI
 
 on: push
 
