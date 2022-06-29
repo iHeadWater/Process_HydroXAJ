@@ -8,7 +8,7 @@ setup(
     version="",  # 输入版本号
     keywords=[""],  # 输入关键词
     description="",  # 输入概述
-    long_description="",  # 输入描述
+    long_description="update",  # 输入描述
 
     url="",  # 输入项目Github仓库的链接
     author="",  # 输入作者名字
