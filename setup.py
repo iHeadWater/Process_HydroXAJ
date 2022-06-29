@@ -4,7 +4,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="",  # 输入项目名称
+    name="hydroxaj",  # 输入项目名称
     version="",  # 输入版本号
     keywords=[""],  # 输入关键词
     description="",  # 输入概述
@@ -19,5 +19,5 @@ setup(
     include_package_data=True,
     platforms="any",
     install_requires=[""],  # 输入项目所用的包
-    python_requires='>= ',  # Python版本要求
+    python_requires='>=3.7',  # Python版本要求
 )
