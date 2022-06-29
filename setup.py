@@ -4,7 +4,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="hydroxaj",  # 输入项目名称
+    name="testxaj",  # 输入项目名称
     version="",  # 输入版本号
     keywords=[""],  # 输入关键词
     description="",  # 输入概述
