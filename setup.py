@@ -9,7 +9,7 @@ setup(
     name="hydromodel",  # 输入项目名称
     version="0.0.2",  # 输入版本号
     keywords=[""],  # 输入关键词
-    description="",  # 输入概述
+    description="xin an jiang",  # 输入概述
     long_description=readme+'\n\n'+doclink,  # 输入描述
 
     url="https://github.com/iHeadWater/Process_HydroXAJ",  # 输入项目Github仓库的链接
