@@ -12,7 +12,7 @@ setup(
     description="",  # 输入概述
     long_description=readme+'\n\n'+doclink,  # 输入描述
 
-    url="",  # 输入项目Github仓库的链接
+    url="https://github.com/iHeadWater/Process_HydroXAJ",  # 输入项目Github仓库的链接
     author="Ouyang_Wenyu",  # 输入作者名字
     author_email="",  # 输入作者邮箱
     license="GPLv3",  # 此为声明文件，一般填写 MIT_license
