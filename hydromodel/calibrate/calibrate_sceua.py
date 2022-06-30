@@ -2,8 +2,8 @@ from typing import Union
 
 import numpy as np
 import spotpy
-from spotpy.parameter import Uniform, ParameterSet
 from spotpy.objectivefunctions import rmse
+from spotpy.parameter import Uniform, ParameterSet
 
 from hydromodel.models.gr4j import gr4j
 from hydromodel.models.hymod import hymod

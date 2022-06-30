@@ -1,8 +1,8 @@
 """Calibrate XAJ model using DEAP"""
-from deap import base, creator
 import random
-from deap import tools
 import numpy as np
+from deap import base, creator
+from deap import tools
 from hydromodel.calibrate.stat import statRmse
 from hydromodel.models.gr4j import gr4j
 from hydromodel.models.hymod import hymod

@@ -2,8 +2,9 @@
 Core code for XinAnJiang model
 """
 import logging
-from typing import Union
 from collections import OrderedDict
+from typing import Union
+
 import numpy as np
 from numba import jit
 from scipy.special import gamma

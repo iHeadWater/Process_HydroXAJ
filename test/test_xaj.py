@@ -6,11 +6,11 @@ import pandas as pd
 import pytest
 import spotpy
 
-from hydromodel.calibrate.calibrate_sceua import calibrate_by_sceua, SpotSetup
-from hydromodel.calibrate.calibrate_ga import calibrate_by_ga
 import definitions
-from hydromodel.visual.pyspot_plots import show_calibrate_result
+from hydromodel.calibrate.calibrate_ga import calibrate_by_ga
+from hydromodel.calibrate.calibrate_sceua import calibrate_by_sceua, SpotSetup
 from hydromodel.models.xaj import xaj, uh_gamma, uh_conv
+from hydromodel.visual.pyspot_plots import show_calibrate_result
 
 
 @pytest.fixture()
