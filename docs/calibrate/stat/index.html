@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="http://127.0.0.1:8000/C%3A/Users/k6789/IdeaProjects/Process_HydroXAJ/docs/calibrate/stat/" />
+      <link rel="shortcut icon" href="../../../../../../../../img/favicon.ico" />
+    <title>stat - Hydro Models Docs</title>
+    <link rel="stylesheet" href="../../../../../../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../../../../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../../../../../../../assets/_mkdocstrings.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "stat";
+        var mkdocs_page_input_path = "C:\\Users\\k6789\\IdeaProjects\\Process_HydroXAJ\\docs\\calibrate\\stat.md";
+        var mkdocs_page_url = "/C%3A/Users/k6789/IdeaProjects/Process_HydroXAJ/docs/calibrate/stat/";
+      </script>
+    
+    <script src="../../../../../../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../../../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../../../../../.." class="icon icon-home"> Hydro Models Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../../../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              
+                      <p class="caption"><span class="caption-text">Code Reference</span></p>
+              
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="#">app</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../app/calibrate_xaj/">calibrate_xaj</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">calibrate</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../calibrate_ga/">calibrate_ga</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../calibrate_sceua/">calibrate_sceua</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">stat</a>
+    <ul class="current">
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">models</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../models/gr4j/">gr4j</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../models/hymod/">hymod</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../models/xaj/">xaj</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../models/xaj_river/">xaj_river</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">utils</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../utils/hydro_utils/">hydro_utils</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">visual</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../visual/pyspot_plots/">pyspot_plots</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../../../..">Hydro Models Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../../../../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Code Reference &raquo;</li>
+          <li>calibrate &raquo;</li><li>stat</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <div class="doc doc-object doc-module">
+
+
+<a id="hydromodel.calibrate.stat"></a>
+  <div class="doc doc-contents first">
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="hydromodel.calibrate.stat.KGE" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">KGE</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">xo</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Kling Gupta Efficiency (Gupta et al., 2009, http://dx.doi.org/10.1016/j.jhydrol.2009.08.003)</p>
+<h4 id="hydromodel.calibrate.stat.KGE--parameters">Parameters</h4>
+<p>xs
+    simulated
+xo
+    observed</p>
+<h4 id="hydromodel.calibrate.stat.KGE--returns">Returns</h4>
+<p>float
+    KGE: Kling Gupta Efficiency</p>
+
+      <details class="quote">
+        <summary>Source code in <code>hydromodel\calibrate\stat.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">KGE</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">xo</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Kling Gupta Efficiency (Gupta et al., 2009, http://dx.doi.org/10.1016/j.jhydrol.2009.08.003)</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    xs</span>
+<span class="sd">        simulated</span>
+<span class="sd">    xo</span>
+<span class="sd">        observed</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    float</span>
+<span class="sd">        KGE: Kling Gupta Efficiency</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">xo</span><span class="p">,</span> <span class="n">xs</span><span class="p">)[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+    <span class="n">alpha</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">xs</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">xo</span><span class="p">)</span>
+    <span class="n">beta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">xs</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">xo</span><span class="p">)</span>
+    <span class="n">kge</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">r</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">alpha</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">beta</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">kge</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="hydromodel.calibrate.stat.NSE" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">NSE</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">xo</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Calculate NSE</p>
+<h4 id="hydromodel.calibrate.stat.NSE--parameters">Parameters</h4>
+<p>xs
+    simulated
+xo
+    observed</p>
+<h4 id="hydromodel.calibrate.stat.NSE--returns">Returns</h4>
+<p>float
+    NSE: Nash-Sutcliffe model efficiency coefficient</p>
+
+      <details class="quote">
+        <summary>Source code in <code>hydromodel\calibrate\stat.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">NSE</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">xo</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate NSE</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    xs</span>
+<span class="sd">        simulated</span>
+<span class="sd">    xo</span>
+<span class="sd">        observed</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    float</span>
+<span class="sd">        NSE: Nash-Sutcliffe model efficiency coefficient</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">x_mean</span> <span class="o">=</span> <span class="n">xo</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+    <span class="n">SST</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">((</span><span class="n">xo</span> <span class="o">-</span> <span class="n">x_mean</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="n">SSRes</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">((</span><span class="n">xo</span> <span class="o">-</span> <span class="n">xs</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="n">nse</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">SSRes</span> <span class="o">/</span> <span class="n">SST</span>
+    <span class="k">return</span> <span class="n">nse</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="hydromodel.calibrate.stat.statError" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">statError</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">pred</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Calculate multiple statistics indicators:</p>
+<h4 id="hydromodel.calibrate.stat.statError--parameters">Parameters</h4>
+<p>target
+    observation
+pred
+    prediction</p>
+<h4 id="hydromodel.calibrate.stat.statError--returns">Returns</h4>
+<p>dict
+    (Bias=Bias, RMSE=RMSE, ubRMSE=ubRMSE, Corr=Corr, R2=R2, NSE=NSE, KGE=KGe, FHV=PBiashigh, FLV=PBiaslow)</p>
+
+      <details class="quote">
+        <summary>Source code in <code>hydromodel\calibrate\stat.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">statError</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">pred</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate multiple statistics indicators:</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    target</span>
+<span class="sd">        observation</span>
+<span class="sd">    pred</span>
+<span class="sd">        prediction</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    dict</span>
+<span class="sd">        (Bias=Bias, RMSE=RMSE, ubRMSE=ubRMSE, Corr=Corr, R2=R2, NSE=NSE, KGE=KGe, FHV=PBiashigh, FLV=PBiaslow)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">ngrid</span><span class="p">,</span> <span class="n">nt</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">shape</span>
+    <span class="c1"># Bias</span>
+    <span class="n">Bias</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanmean</span><span class="p">(</span><span class="n">pred</span> <span class="o">-</span> <span class="n">target</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="c1"># RMSE</span>
+    <span class="n">RMSE</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">nanmean</span><span class="p">((</span><span class="n">pred</span> <span class="o">-</span> <span class="n">target</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+    <span class="c1"># ubRMSE</span>
+    <span class="n">predMean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">tile</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">nanmean</span><span class="p">(</span><span class="n">pred</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="n">nt</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+    <span class="n">targetMean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">tile</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">nanmean</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="n">nt</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+    <span class="n">predAnom</span> <span class="o">=</span> <span class="n">pred</span> <span class="o">-</span> <span class="n">predMean</span>
+    <span class="n">targetAnom</span> <span class="o">=</span> <span class="n">target</span> <span class="o">-</span> <span class="n">targetMean</span>
+    <span class="n">ubRMSE</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">nanmean</span><span class="p">((</span><span class="n">predAnom</span> <span class="o">-</span> <span class="n">targetAnom</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+    <span class="c1"># rho R2 NSE</span>
+    <span class="n">Corr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">ngrid</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
+    <span class="n">R2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">ngrid</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
+    <span class="n">NSE</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">ngrid</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
+    <span class="n">KGe</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">ngrid</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
+    <span class="n">PBiaslow</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">ngrid</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
+    <span class="n">PBiashigh</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">ngrid</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
+    <span class="n">PBias</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">ngrid</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
+    <span class="n">num_lowtarget_zero</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">ngrid</span><span class="p">):</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">pred</span><span class="p">[</span><span class="n">k</span><span class="p">,</span> <span class="p">:]</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">target</span><span class="p">[</span><span class="n">k</span><span class="p">,</span> <span class="p">:]</span>
+        <span class="n">ind</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">logical_and</span><span class="p">(</span><span class="o">~</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="o">~</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">y</span><span class="p">)))[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">ind</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">xx</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">ind</span><span class="p">]</span>
+            <span class="n">yy</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="n">ind</span><span class="p">]</span>
+            <span class="c1"># percent bias</span>
+            <span class="n">PBias</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">xx</span> <span class="o">-</span> <span class="n">yy</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">yy</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
+            <span class="k">if</span> <span class="n">ind</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="c1"># Theoretically at least two points for correlation</span>
+                <span class="n">Corr</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">scipy</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">pearsonr</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">yy</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="n">yymean</span> <span class="o">=</span> <span class="n">yy</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+                <span class="n">SST</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">((</span><span class="n">yy</span> <span class="o">-</span> <span class="n">yymean</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+                <span class="n">SSReg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">((</span><span class="n">xx</span> <span class="o">-</span> <span class="n">yymean</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+                <span class="n">SSRes</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">((</span><span class="n">yy</span> <span class="o">-</span> <span class="n">xx</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+                <span class="n">R2</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">SSRes</span> <span class="o">/</span> <span class="n">SST</span>
+                <span class="n">NSE</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">SSRes</span> <span class="o">/</span> <span class="n">SST</span>
+                <span class="n">KGe</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">KGE</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">yy</span><span class="p">)</span>
+            <span class="c1"># FHV the peak flows bias 2%</span>
+            <span class="c1"># FLV the low flows bias bottom 30%, log space</span>
+            <span class="n">pred_sort</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">xx</span><span class="p">)</span>
+            <span class="n">target_sort</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">yy</span><span class="p">)</span>
+            <span class="n">indexlow</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mf">0.3</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">pred_sort</span><span class="p">))</span>
+            <span class="n">indexhigh</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mf">0.98</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">pred_sort</span><span class="p">))</span>
+            <span class="n">lowpred</span> <span class="o">=</span> <span class="n">pred_sort</span><span class="p">[:</span><span class="n">indexlow</span><span class="p">]</span>
+            <span class="n">highpred</span> <span class="o">=</span> <span class="n">pred_sort</span><span class="p">[</span><span class="n">indexhigh</span><span class="p">:]</span>
+            <span class="n">lowtarget</span> <span class="o">=</span> <span class="n">target_sort</span><span class="p">[:</span><span class="n">indexlow</span><span class="p">]</span>
+            <span class="n">hightarget</span> <span class="o">=</span> <span class="n">target_sort</span><span class="p">[</span><span class="n">indexhigh</span><span class="p">:]</span>
+            <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">lowtarget</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">num_lowtarget_zero</span> <span class="o">=</span> <span class="n">num_lowtarget_zero</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="n">PBiaslow</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">lowpred</span> <span class="o">-</span> <span class="n">lowtarget</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">lowtarget</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
+            <span class="n">PBiashigh</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">highpred</span> <span class="o">-</span> <span class="n">hightarget</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">hightarget</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
+            <span class="n">outDict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+                <span class="n">Bias</span><span class="o">=</span><span class="n">Bias</span><span class="p">,</span>
+                <span class="n">RMSE</span><span class="o">=</span><span class="n">RMSE</span><span class="p">,</span>
+                <span class="n">ubRMSE</span><span class="o">=</span><span class="n">ubRMSE</span><span class="p">,</span>
+                <span class="n">Corr</span><span class="o">=</span><span class="n">Corr</span><span class="p">,</span>
+                <span class="n">R2</span><span class="o">=</span><span class="n">R2</span><span class="p">,</span>
+                <span class="n">NSE</span><span class="o">=</span><span class="n">NSE</span><span class="p">,</span>
+                <span class="n">KGE</span><span class="o">=</span><span class="n">KGe</span><span class="p">,</span>
+                <span class="n">FHV</span><span class="o">=</span><span class="n">PBiashigh</span><span class="p">,</span>
+                <span class="n">FLV</span><span class="o">=</span><span class="n">PBiaslow</span><span class="p">,</span>
+            <span class="p">)</span>
+    <span class="n">hydro_logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span>
+        <span class="s2">&quot;The CDF of BFLV will not reach 1.0 because some basins have all zero flow observations for the &quot;</span>
+        <span class="s2">&quot;30</span><span class="si">% lo</span><span class="s2">w flow interval, the percent bias can be infinite</span><span class="se">\n</span><span class="s2">&quot;</span>
+        <span class="o">+</span> <span class="s2">&quot;The number of these cases is &quot;</span>
+        <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num_lowtarget_zero</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="k">return</span> <span class="n">outDict</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="hydromodel.calibrate.stat.statNse" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">statNse</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">pred</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Calculate NSE for two dimensional array</p>
+<h4 id="hydromodel.calibrate.stat.statNse--parameters">Parameters</h4>
+<p>target
+    observation
+pred
+    prediction</p>
+<h4 id="hydromodel.calibrate.stat.statNse--returns">Returns</h4>
+<p>np.array
+    one NSE for one element in the 1-dim result</p>
+
+      <details class="quote">
+        <summary>Source code in <code>hydromodel\calibrate\stat.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span>
+<span class="normal">79</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">statNse</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">pred</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate NSE for two dimensional array</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    target</span>
+<span class="sd">        observation</span>
+<span class="sd">    pred</span>
+<span class="sd">        prediction</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    np.array</span>
+<span class="sd">        one NSE for one element in the 1-dim result</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">ngrid</span><span class="p">,</span> <span class="n">nt</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">shape</span>
+    <span class="n">NSe</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">ngrid</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">ngrid</span><span class="p">):</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">pred</span><span class="p">[</span><span class="n">k</span><span class="p">,</span> <span class="p">:]</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">target</span><span class="p">[</span><span class="n">k</span><span class="p">,</span> <span class="p">:]</span>
+        <span class="n">ind</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">logical_and</span><span class="p">(</span><span class="o">~</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="o">~</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">y</span><span class="p">)))[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">ind</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">xx</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">ind</span><span class="p">]</span>
+            <span class="n">yy</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="n">ind</span><span class="p">]</span>
+            <span class="n">NSe</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">NSE</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">yy</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">NSe</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="hydromodel.calibrate.stat.statRmse" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">statRmse</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">pred</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Calculate RMSE for multi-dim arrays</p>
+<h4 id="hydromodel.calibrate.stat.statRmse--parameters">Parameters</h4>
+<p>target
+    observation
+pred
+    prediction
+axis
+    calculate through which axis</p>
+<h4 id="hydromodel.calibrate.stat.statRmse--returns">Returns</h4>
+<p>np.array
+    RMSE</p>
+
+      <details class="quote">
+        <summary>Source code in <code>hydromodel\calibrate\stat.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">statRmse</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">pred</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate RMSE for multi-dim arrays</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    target</span>
+<span class="sd">        observation</span>
+<span class="sd">    pred</span>
+<span class="sd">        prediction</span>
+<span class="sd">    axis</span>
+<span class="sd">        calculate through which axis</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    np.array</span>
+<span class="sd">        RMSE</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">nanmean</span><span class="p">((</span><span class="n">pred</span> <span class="o">-</span> <span class="n">target</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="n">axis</span><span class="p">))</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../calibrate_sceua/" class="btn btn-neutral float-left" title="calibrate_sceua"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../models/gr4j/" class="btn btn-neutral float-right" title="gr4j">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../calibrate_sceua/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../models/gr4j/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../../../../../../..';</script>
+    <script src="../../../../../../../../js/theme_extra.js" defer></script>
+    <script src="../../../../../../../../js/theme.js" defer></script>
+      <script src="../../../../../../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
