@@ -1,6 +1,8 @@
 site_name: Hydro Models Docs
 theme:
     readthedocs
+extra_css:
+    - css/mkdocstrings.css
 plugins:
   - search
   - mkdocstrings:
@@ -15,7 +17,8 @@ plugins:
       nav_file: SUMMARY.md
 watch:
     - hydromodel
+use_directory_urls: false
 nav:
-- Code Reference: docs/
+- Code Reference: reference/
 
 
