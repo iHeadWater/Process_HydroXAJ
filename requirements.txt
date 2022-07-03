@@ -16,3 +16,4 @@ mkdocs-literate-nav
 mkdocs-section-index
 click
 pyyaml
+importlib-metadata
