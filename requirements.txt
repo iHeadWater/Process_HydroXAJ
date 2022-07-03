@@ -46,3 +46,8 @@ griffe
 mkdocstrings-python
 
 ghp-import
+colorama
+packaging
+python-dateutil
+pyparsing
+markdown-callouts
