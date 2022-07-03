@@ -15,6 +15,7 @@ mkdocs-material
 mkdocs-gen-files
 mkdocs-literate-nav
 mkdocs-section-index
+mkdocstrings-python
 click
 pyyaml
 importlib-metadata
