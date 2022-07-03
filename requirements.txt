@@ -41,3 +41,4 @@ tornado
 zipp
 pyyaml-env-tag
 mergedeep
+watchdog
