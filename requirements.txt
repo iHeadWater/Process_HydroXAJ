@@ -43,4 +43,4 @@ pyyaml-env-tag
 mergedeep
 watchdog
 griffe
-mkdocstrings-handlers
+mkdocstrings-python
