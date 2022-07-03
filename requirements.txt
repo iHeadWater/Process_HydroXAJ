@@ -40,3 +40,4 @@ six
 tornado
 zipp
 pyyaml-env-tag
+mergedeep
