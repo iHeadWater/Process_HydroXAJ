@@ -44,3 +44,5 @@ mergedeep
 watchdog
 griffe
 mkdocstrings-python
+
+ghp-import
