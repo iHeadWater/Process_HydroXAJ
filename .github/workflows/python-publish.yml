@@ -13,6 +13,7 @@ on:
   release:
     types: [published]
   workflow_dispatch:
+  pull_request:
 
 permissions:
   contents: read
@@ -43,10 +44,8 @@ jobs:
     - name: Build site
       run: mkdocs build --clean
     - name: Deploy to gh-pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      run: mkdocs gh-deploy --force
       env:
           REPO_KEY: ${{ secrets.GIT_PUSH }}
           CONFIG_FILE: mkdocs.yml
