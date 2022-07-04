@@ -45,8 +45,12 @@ jobs:
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-          github_token: ${{ secrets.GIT_PUSH }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
+      env:
+          REPO_KEY: ${{ secrets.GIT_PUSH }}
+          CONFIG_FILE: mkdocs.yml
+          USERNAME: github-actions[bot]
     - name: Publish package
       uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
       with:
