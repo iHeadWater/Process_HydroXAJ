@@ -41,7 +41,7 @@ jobs:
       run: 
         pip install --no-deps -r requirements.txt
     - name: Build site
-      run: Tiryoh/actions-mkdocs@v0
+      run: mkdocs build --clean
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
