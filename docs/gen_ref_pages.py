@@ -1,10 +1,9 @@
-import os.path
 from pathlib import Path
 
 import mkdocs_gen_files
 """Generate the code reference pages and navigation."""
 nav = mkdocs_gen_files.Nav()
-for path in sorted(Path("hydromodel").rglob("*.py")):
+for path in sorted(Path("../hydromodel").rglob("*.py")):
     module_path = path.relative_to("hydromodel").with_suffix("")
     doc_path = path.relative_to("hydromodel").with_suffix(".md")
     full_doc_path = Path("reference", doc_path)
