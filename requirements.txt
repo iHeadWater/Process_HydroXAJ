@@ -10,8 +10,8 @@ numba>=0.55.1
 scipy>=1.8.1
 deap>=1.3.1
 
-mkdocs
-mkdocs-material
+mkdocs>=1.3.0
+mkdocs-material>=8.3.8
 mkdocs-gen-files
 mkdocs-literate-nav
 mkdocs-section-index
@@ -20,7 +20,7 @@ pyyaml
 importlib-metadata
 future
 glob2
-jinja2
+jinja2>=3.1.2
 joblib
 livereload
 lunr[languages]
