@@ -42,13 +42,13 @@ jobs:
         pip install --no-deps -r requirements.txt
     - name: Build site
       run: mkdocs build --clean
-    - name: Deploy to gh-pages
-      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-      run: mkdocs gh-deploy --force
-      env:
-          REPO_KEY: ${{ secrets.GIT_ACTION_PUSH }}
-          CONFIG_FILE: mkdocs.yml
-          USERNAME: github-actions[bot]
+    #- name: Deploy to gh-pages
+      #if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      #run: mkdocs gh-deploy --force
+      #env:
+          #REPO_KEY: ${{ secrets.GIT_ACTION_PUSH }}
+          #CONFIG_FILE: mkdocs.yml
+          #USERNAME: github-actions[bot]
     - name: Publish package
       uses: pypa/gh-action-pypi-publish@master
       with:
