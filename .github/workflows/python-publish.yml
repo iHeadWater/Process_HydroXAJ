@@ -39,9 +39,9 @@ jobs:
         pip install --no-deps -r requirements.txt
     - name: Build site
       run: mkdocs build --clean
-    - name: Upload to Test PyPI
-      run: twine upload --repository testpypi dist/*
-    - name: Publish package
+    - name: Publish package to PyPI Test with Twine
+      run: twine upload --repository testpypi dist/* --username __token__ --password ${{ secrets.TEST_PYPI_TOKEN }}
+    - name: Publish package to PyPI
       uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
       with:
         user: __token__
