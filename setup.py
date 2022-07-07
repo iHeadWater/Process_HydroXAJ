@@ -8,7 +8,7 @@ doclink="http://waterdoc.readthedocs.io/"
 
 setup(
     name="hydromodel",  # 输入项目名称
-    version=random.choice('abcdefghijklmnopqrstuvwxyz'),  # 输入版本号
+    version=random.choice('1234567890'),  # 输入版本号
     keywords=[""],  # 输入关键词
     description="xin an jiang",  # 输入概述
     long_description=readme+'\n\n'+doclink,  # 输入描述
