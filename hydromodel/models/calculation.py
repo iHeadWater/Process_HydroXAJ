@@ -6,6 +6,7 @@ def add(a, b):
         b (float): A number representing the second addend in the addition.
 
     Returns:
+        Today is 2022.7.8
         float: A number representing the artihmetic sum of `a` and `b`.
     """
     return float(a + b)
